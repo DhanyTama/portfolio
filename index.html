@@ -260,7 +260,10 @@
     <script>
         AOS.init({
             duration: 800,
-            once: true
+            once: true,
+            disable: function () {
+                return window.innerWidth < 768;
+            }
         });
     </script>
 </body>
